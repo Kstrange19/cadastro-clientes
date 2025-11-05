@@ -7,6 +7,7 @@ class Application:
         self.window = window
         self.tela()
         self.frames_da_tela()
+        self.botoes_frame1()
         self.window.mainloop()
     def tela(self):
         self.window.title("Cadastro de Clientes")
@@ -30,5 +31,25 @@ class Application:
         self.frame_2 = Frame(self.window, bd=2, background="#ffffff",
                             highlightbackground="#FFB74D", highlightthickness=4)
         self.frame_2.place(relx=0.005, rely=0.505, relwidth=0.990, relheight=0.490)
+    def botoes_frame1(self):
+        ### Criação do botão limpar
+        self.bt_limpar = Button(self.frame_1, text="Limpar", bd=4, bg="#234299", fg='white', font=('arial', 11,))
+        self.bt_limpar.place(relx=0.2, rely=0.08, relwidth=0.1, relheight=0.15)
+        
+        ### Criação do botão buscar
+        self.bt_buscar = Button(self.frame_1, text="Buscar", bd=4, bg="#234299", fg='white', font=('arial', 11,))
+        self.bt_buscar.place(relx=0.3, rely=0.08, relwidth=0.1, relheight=0.15)
+        
+        ### Criação do botão novo
+        self.bt_buscar = Button(self.frame_1, text="Novo", bd=4, bg="#234299", fg='white', font=('arial', 11,))
+        self.bt_buscar.place(relx=0.6, rely=0.08, relwidth=0.1, relheight=0.15)
+        
+        ### Criação do botão alterar
+        self.bt_buscar = Button(self.frame_1, text="Alterar", bd=4, bg="#234299", fg='white', font=('arial', 11,))
+        self.bt_buscar.place(relx=0.7, rely=0.08, relwidth=0.1, relheight=0.15)
+        
+        ### Criação do botão apagar
+        self.bt_buscar = Button(self.frame_1, text="Apagar", bd=4, bg="#234299", fg='white', font=('arial', 11,))
+        self.bt_buscar.place(relx=0.8, rely=0.08, relwidth=0.1, relheight=0.15)
 
 Application()
